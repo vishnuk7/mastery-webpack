@@ -52,3 +52,12 @@ above command help you inspect your code which give you url with the help that o
   "dev":"npm run webpack-start -- --mode development --watch",
 }
 ```
+Webpack bundle only which those element which are using other are going to elminate
+
+`webpack.config.js`
+
+```js
+module.export = {
+    
+}
+```
