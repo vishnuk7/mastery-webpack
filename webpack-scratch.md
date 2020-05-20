@@ -26,4 +26,29 @@ by default it look inside the `./src` folder for entry point
 }
 ```
 
- 
+#### Debug Webpack
+```json
+"script":{
+  "webpack-start":"webpack",
+  "dev":"npm run webpack-start -- --mode development",//compose
+  "prod":"npm run webpack-start -- --mode production",
+  "dev:debug":"npm run debug -- --mode production",
+  "prod:debug":"npm run debug -- --mode development"
+}
+```
+
+```json
+"script":{
+  "debugthis":"node --inspect --inspect-brk ./src/index.js",
+}
+```
+above command help you inspect your code which give you url with the help that of url you can use chrome debug it
+
+>by default build asset go into `dist` folder
+
+#### Adding watch mode
+```json
+"script" => {
+  "dev":"npm run webpack-start -- --mode development --watch",
+}
+```
